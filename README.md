@@ -1,53 +1,36 @@
-# People Analytics Portfolio
-### Mintay Misgano — People Analytics | I-O Psychology | Workforce Research
+# The Modern Data Scientist Market in the United States (2021)
+**Tools:** Python · RapidMiner · Power BI | **Domain:** Labor Market Analytics / Workforce Intelligence
 
 ---
 
-## About This Portfolio
+## Overview
 
-This repository contains a curated collection of applied analytics projects at the intersection of people data, organizational research, and statistical modeling. Each project is self-contained with polished code, an executive brief, and a full written report.
+An exploratory analysis of 742 data science job postings scraped from Glassdoor, examining salary distribution, geographic concentration, organizational characteristics, and technical tool demand across DS, DA, Data Engineer, and Senior DS roles.
 
-I am a People Analytics professional and I-O Psychology researcher with practitioner experience at Intuit and Microsoft, a completed dissertation on inclusive leadership and career development (Seattle Pacific University, 2026), and a peer-reviewed publication in *Journal of Racial and Ethnic Health Disparities* (Springer, 2023). My work spans predictive workforce modeling, survey research and psychometrics, regression analysis, and HR data strategy.
+## Key Findings
 
-**Tools I work with:** R · Python · SPSS · SQL · Tableau · Power BI · Qualtrics
+- **Python is universally required** — and becomes even more dominant at senior levels alongside deep learning frameworks (Keras, PyTorch)
+- **Coastal markets dominate** — California, Massachusetts, and New York account for the highest role volume, salary, and seniority. The effect intensifies as roles become more senior.
+- **The typical hiring organization** is large (1,001–5,000 employees), young (<50 years), private, and in IT or biotech
+- **Flink and Google Analytics** are nearly absent from postings — low-priority tools for most job seekers
+- **Degree requirements escalate with pay** — BA covers entry-level; MA/Ph.D. become requirements for senior and research roles
 
----
+## Files
 
-## Projects
+| File | Description |
+|------|-------------|
+| `DS_Salary_Data_Prep.py` | Python script replicating data cleaning (originally done in RapidMiner) |
+| `Executive_Brief.md` | 1-page summary for HR and workforce planning leaders |
+| `DS_Salary_Project_Report.md` | Full written report with methodology, findings, and discussion |
+| `ds_salary_original.csv` | Raw Kaggle dataset (742 rows × 42 columns) |
+| `dashboard_1.png` · `dashboard_2.png` · `dashboard_3.png` | Power BI dashboard screenshots |
 
-### [01 — IBM HR Attrition Analysis](./01_IBM_HR_Attrition_Analysis/)
-**Tools:** Python, Scikit-learn, Pandas · **Domain:** Predictive Workforce Analytics
+## Dashboard
 
-Logistic regression and machine learning models predicting voluntary employee attrition using the IBM HR Analytics dataset (1,470 employees, 35 features). Includes feature importance analysis, assumption testing, and actionable recommendations for People Analytics practitioners building early-warning retention systems.
+The interactive Power BI dashboard includes salary maps (3D and 2D), tool demand analysis via Key Influencers, a job description word cloud, and salary breakdowns by company and personal features. Global filters allow cross-tab exploration by industry, seniority, degree, and organization size.
 
----
-
-### [02 — Project Bid Accuracy Analysis (NDA Org)](./02_Ergometrics_R_Consulting/)
-**Tools:** R, OLS Regression, RMarkdown · **Domain:** Consulting Analytics / Organizational Research
-
-*NDA engagement — all client and personnel identifiers anonymized.*
-
-Ten OLS regression models identifying the structural drivers of bid-to-invoice discrepancy at a mid-size public safety assessment firm (N = 279 project records, FY2020–2021). Key finding: consultant identity and four specific client organizations predict estimation error; industry sector and assessed rank do not. Includes full assumption testing, model comparison table, and five targeted operational recommendations.
-
----
-
-*More projects coming soon — including workforce salary analysis (Power BI), adverse impact and compensation equity analysis, and survey research design.*
+*Power BI file (.pbix) available on request — file size exceeds GitHub's 25MB display limit.*
 
 ---
 
-## How This Portfolio Is Organized
-
-Each project folder contains:
-- `README.md` — project overview and key findings
-- Polished analysis code (`.Rmd` or `.ipynb`) with full inline documentation
-- `Executive_Brief.md` — 1-page summary for HR and People Analytics leaders
-- `Project_Report.md` — full written report (PhD-quality, APA references) — reads in browser
-- `Project_Report.docx` — downloadable Word version for printing or sharing
-- `data.csv` — anonymized dataset where applicable
-
----
-
-## Contact
-
-**LinkedIn:** [linkedin.com/in/mintaymisgano](https://www.linkedin.com/in/mintaymisgano)
-**Email:** Available on request
+*Mintay Misgano | People Analytics Portfolio | Seattle Pacific University, 2022*
