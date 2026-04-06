@@ -1009,7 +1009,7 @@ Rosseel, Y. (2012). lavaan: An R package for structural equation
 modeling. *Journal of Statistical Software, 48*(2), 1–36.
 <https://doi.org/10.18637/jss.v048.i02>
 
-> **GitHub Rendering Note:** To view this document with full output on
+
 > GitHub, knit this `.Rmd` in RStudio using `Ctrl+Shift+K`. This
 > produces `CFA_Scale_Validation.md` and a `CFA_Scale_Validation_files/`
 > folder containing the plots. Commit all three files (`.Rmd`, `.md`,
