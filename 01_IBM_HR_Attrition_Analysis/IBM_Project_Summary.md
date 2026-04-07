@@ -9,7 +9,7 @@
 
 This project was completed as part of graduate coursework in people analytics and machine learning. It uses a public benchmark dataset to examine which workforce factors are associated with attrition and to compare several standard classification models in a structured workflow.
 
-The goal is to demonstrate how an attrition analysis can be framed, modeled, and interpreted responsibly using public data.
+The goal is not to present a deployable attrition tool. The goal is to show how an attrition problem can be framed responsibly, translated into an analytical workflow, and interpreted with appropriate caution when the data come from a public benchmark.
 
 ---
 
@@ -35,17 +35,18 @@ The goal is to demonstrate how an attrition analysis can be framed, modeled, and
 
 ## What This Demonstrates
 
-For a real organization, these results point to several areas worth validating with internal data:
+This project demonstrates several skills that matter in applied people analytics work:
 
-1. Overtime and workload patterns as potential retention risks
-2. Compensation and equity structure as possible differentiators in exit risk
-3. Early-tenure experience as a priority window for retention analysis
-4. Role-specific attrition patterns rather than one-size-fits-all interventions
+1. Translating a broad workforce question into a staged analytical workflow
+2. Handling class imbalance rather than relying on misleading accuracy alone
+3. Comparing interpretable and non-linear modeling approaches instead of depending on a single model
+4. Connecting model outputs back to understandable workforce patterns
+5. Communicating findings with scope limits that match the data source
 
-These are illustrative implications, not deployment recommendations. Any operational use would require organization-specific data, validation, fairness review, and stakeholder review.
+For a real organization, the findings suggest the kinds of issues that would be worth validating with internal data, especially workload patterns, compensation structure, early-tenure experience, and role-level variation. These are illustrative implications, not deployment recommendations.
 
 ---
 
 ## Bottom Line
 
-This project shows a practical people analytics workflow for attrition modeling: define the business question, inspect the data carefully, account for class imbalance, compare multiple models, and translate findings into cautious business implications. The strongest value here is the demonstration of analytical skill: moving from raw benchmark data to interpretable results without overstating what the data can support.
+This project shows a practical people analytics workflow for attrition modeling: define the question, inspect the data carefully, account for class imbalance, compare multiple models, and interpret the results in plain language. Its strongest value as a portfolio piece is not that it solves attrition universally, but that it demonstrates disciplined analytical thinking with a familiar workforce problem.
