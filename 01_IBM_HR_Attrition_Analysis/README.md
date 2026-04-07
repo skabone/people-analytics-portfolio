@@ -1,56 +1,53 @@
-# HR Employee Attrition Analysis — IBM Dataset
+# HR Employee Attrition Analysis — IBM Benchmark Dataset
 
-**Author:** Mintay Misgano, Ph.D.
-**Focus:** People Analytics | I-O Psychology | Workforce Modeling
-**Dataset:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) (Kaggle)
+**Author:** Mintay Misgano, PhD  
+**Dataset:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)  
+**Question:** Which employee and job factors are most associated with attrition, and how well can standard classification models separate higher-risk from lower-risk cases?
 
 ---
 
 ## Overview
 
-Employee attrition is one of the most costly challenges in workforce management. This project analyzes IBM's HR dataset (1,470 employees, 35 variables) to identify the key drivers of voluntary turnover and build a predictive classification model for attrition risk.
+This project uses the IBM HR Analytics benchmark dataset (1,470 employees; 35 variables) to examine attrition patterns and compare several supervised learning approaches. The analysis combines exploratory data analysis, class-imbalance handling, classification modeling, and PCA to show how a people analytics workflow can move from descriptive patterns to predictive signal.
 
-**Business Question:** What employee characteristics and work conditions are most associated with attrition, and can we predict which employees are at highest risk?
+The project was completed as part of graduate coursework in people analytics and machine learning. The emphasis here is on demonstrating applied workflow, interpretation, and communication rather than presenting a production-ready attrition system.
 
----
-
-## Notebooks
-
-| # | Notebook | Description |
-|---|----------|-------------|
-| 01 | `01_EDA_and_Preprocessing.ipynb` | Data exploration, class imbalance analysis, visualizations, SMOTE/ADASYN oversampling |
-| 02 | `02_Decision_Tree_Modeling.ipynb` | Decision Tree and Random Forest classifiers, feature importance, model evaluation |
-| 03 | `03_PCA_Analysis.ipynb` | Dimensionality reduction with and without standardization |
+Because this is a public benchmark dataset, the findings should be read as an analytical demonstration rather than as recommendations for deployment in a live organization without revalidation.
 
 ---
 
 ## Key Findings
 
-- Attrition base rate is ~16%, creating a class imbalance that required oversampling (SMOTE/ADASYN) before modeling
-- Overtime, job role, marital status, and distance from home were among the strongest visual predictors of attrition
-- Decision Tree and Random Forest models were compared across original and balanced datasets
-- PCA was used to explore whether dimensionality reduction improved model separability
+- Attrition is a minority outcome in the dataset at about 16%, making class imbalance an important modeling issue.
+- Overtime, compensation-related variables, job role, marital status, age, and tenure patterns all show meaningful relationships with attrition.
+- Logistic Regression, Decision Tree, and Random Forest models all improved after balancing the training data.
+- Logistic Regression produced the strongest overall test performance in this project, with AUC = 0.934 on the balanced evaluation setup.
+- PCA was useful for exploring structure in the feature space, but it was not the main driver of predictive performance.
 
 ---
 
-## Tools & Methods
+## Project Files
 
-- **Python:** pandas, numpy, scikit-learn, seaborn, matplotlib, statsmodels
-- **Models:** Decision Tree Classifier, Random Forest Classifier
-- **Preprocessing:** Label encoding, feature scaling, train/test split
-- **Imbalance handling:** SMOTE (Synthetic Minority Oversampling Technique), ADASYN
-- **Dimensionality reduction:** PCA with and without standardization
-
----
-
-## Data
-
-`HR_Attrition_IBM.csv` — original Kaggle dataset, 1,470 rows × 35 columns. No missing values.
+| File | Purpose |
+|---|---|
+| `01_Data_Preparation_and_EDA.ipynb` | Data exploration, feature preparation, and class imbalance handling |
+| `02_Classification_Modeling.ipynb` | Classification modeling and feature importance analysis |
+| `03_PCA_Exploration.ipynb` | Dimensionality reduction and feature-space exploration |
+| `IBM_Project_Summary.md` | Short summary of the project and its main takeaways |
+| `IBM_Project_Report.md` | Full project report with methods, results, and limitations |
 
 ---
 
-## About
+## Tools
 
-This project was completed as part of graduate coursework in People Analytics and Machine Learning at Seattle Pacific University (2022). The methods applied here — classification modeling, feature engineering, and imbalance handling — are directly relevant to real-world workforce analytics use cases such as retention risk scoring, workforce planning, and HRIS analytics.
+- Python
+- pandas, numpy, scikit-learn
+- seaborn, matplotlib
+- SMOTE, ADASYN
+- Decision Tree, Random Forest, Logistic Regression, PCA
 
-*Ph.D. in Industrial-Organizational Psychology, Seattle Pacific University (2026)*
+---
+
+## Data Note
+
+`HR_Attrition_IBM.csv` is a clean benchmark dataset with no missing values. It is useful for demonstrating workflow design, model comparison, and interpretation, but it should not be treated as evidence about IBM's current workforce or as a substitute for organization-specific validation.
