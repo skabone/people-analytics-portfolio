@@ -8,6 +8,10 @@ This repository presents a curated portfolio of public-facing analytics, psychom
 
 The goal of this portfolio is to document analytical process clearly, communicate findings appropriately for each project context, and preserve enough methodological detail for readers who want to go deeper.
 
+## Quick Links
+
+- [Resume (PDF)](./resume/Mintay_Misgano_PhD_Resume.pdf)
+
 ## Repository Structure
 
 Each project folder contains only the polished public materials prepared for GitHub:
