@@ -12,6 +12,7 @@ The goal of this portfolio is to document analytical process clearly, communicat
 
 - [Resume (PDF)](./resume/Mintay_Misgano_PhD_Resume.pdf)
 - [LinkedIn](https://www.linkedin.com/in/mmisgano/)
+- [GitHub Interview Prep Guide](./GitHub_Interview_Prep.md)
 
 ## Repository Structure
 
